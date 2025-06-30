@@ -85,7 +85,7 @@ export default function PatchTuesday() {
       <style>{`
           @keyframes typing {
             from { width: 0; }
-            to { width: 31ch; } /* Adjust to approx the length of your title */
+            to { width: 30ch; } /* Adjust to approx the length of your title */
           }
           @keyframes blink {
             50% { border-color: transparent; }
