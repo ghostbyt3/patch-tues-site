@@ -142,7 +142,12 @@ export default function PatchTuesday() {
         </ScrollArea>
 
         <Card className="md:col-span-3 bg-[#0f172a] text-green-300 border-[1.5px] border-green-500 rounded-xl glow-box">
-          <CardContent className="prose prose-invert prose-sm max-w-none p-6 overflow-y-auto h-[80vh] whitespace-pre-wrap">
+          <CardContent
+            className="prose prose-invert max-w-none p-6 overflow-auto scrollbar-none"
+            style={{ maxHeight: '80vh', fontSize: '15px', lineHeight: '1.5' }}
+            >
+
+
             {content ? (
               <div>{content.split("\n").map((line, i) => (<p key={i}>{line}</p>))}</div>
             ) : (
