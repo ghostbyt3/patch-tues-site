@@ -272,7 +272,7 @@ export default function PatchTuesday() {
             >
             {/* Summary View */}
             {loading ? (
-              <div>Select a month from the left sidebar to view its Patch Tuesday updates.</div>
+              <div>Loading Patch Tuesday data...</div>
             ) : data ? (
               <>
                 <div className="mb-6">
@@ -377,7 +377,7 @@ export default function PatchTuesday() {
                 )}
               </>
             ) : (
-              <div>Loading Patch Tuesday data...</div>
+              <div>Select a month from the left sidebar to view its Patch Tuesday updates.</div>
             )}
           </CardContent>
         </Card>
