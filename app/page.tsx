@@ -21,13 +21,6 @@ const MONTH_ORDER = [
   "Dec",
 ];
 
-// TODO: Replace with your GitHub username and repo where GH Action outputs patches
-const GITHUB_USER = "ghostbyt3";
-const GITHUB_REPO = "patch-tuesday";
-const BRANCH = "main";
-
-const baseRawUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${BRANCH}/History/`;
-
 // Helper types for JSON structure
 interface Metadata {
   title: string;
@@ -279,7 +272,7 @@ export default function PatchTuesday() {
             >
             {/* Summary View */}
             {loading ? (
-              <div>Loading Patch Tuesday data...</div>
+              <div>Select a month from the left sidebar to view its Patch Tuesday updates.</div>
             ) : data ? (
               <>
                 <div className="mb-6">
